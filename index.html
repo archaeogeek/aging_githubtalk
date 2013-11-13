@@ -44,9 +44,16 @@
 					<p>
 						<small>Jo Cook, Astun Technology</a> / <a href="http://twitter.com/archaeogeek">@archaeogeek</a></small>
 					</p>
+					<img class="center" src="./images/logo.jpg" alt="Astun Logo">
 				</section>
+
+				<section>
+					<h2>Put away your paper, pens, pencils and other note-taking implements!</h2>
+					<p>This talk is on GitHub, so by the end of it you should be able to view it online, and download your own copy</p>
+				</section>
+
 				<section data-background="./images/github_homepage.png" />
-					<h2 style="color:white">This is all wrong</h2>
+					<h2 style="color:white">This is misleading</h2>
 				</section>
 
 				<section data-background="./images/sharing.jpg">
@@ -61,7 +68,7 @@
 					<p>
 						It's great for collaboration, disaster-recovery, and encourages good practice (be that writing code or prose)
 					</p>
-					<a class="image"> <img src="./images/pull_request.png" alt="Pull Request"></a>
+					<a class="image"> <img class="center" src="./images/pull_request.png" alt="Pull Request"></a>
 				</section>
 
 				<section>
@@ -82,6 +89,7 @@
 							<li>Get the (free) <a href="http://git-scm.com/book">book</a></li>
 							<li>Start with the really nice desktop client (windows or mac)</li>
 							<li>Create your own private local repositories to get used to the process</li>
+						</ul>
 				</section>
 
 				<section>
@@ -92,37 +100,45 @@
 
 				<section>
 						<h2>The beginning</h2>
-							<p>Convert your folder into a repository:</p>
-							<li>Either CLONE (eg copy) an existing repository</li>
-							<li>... or INIT (eg create from scratch) a new repository</li>
+							<h3>Convert your folder into a repository</h3>
+							<ul>
+								<li>Either CLONE (eg copy) an existing repository</li>
+								<li>... or INIT (eg create from scratch) a new repository</li>
+							</ul>
 				</section>
 
 				<section>
-					<h2>Choosing which files to track</h2>
-						<p>Git will only track files that you tell it to:</p>
-						<li>ADD the files you want to track (and RM --cached the ones you don't)</li>
-						<li>.GITIGNORE compiles a list of files or file types you never want to track</li>
+					<h2>Tracking Files</h2>
+						<h3>Git will only track files that you ask it to</h3>
+						<ul>
+							<li>ADD the files you want to track (and RM --cached the ones you don't)</li>
+							<li>.GITIGNORE compiles a list of files or file types you never want to track</li>
+						</ul>
 				</section>
 
 				<section>
 					<h2>Making changes</h2>
-						<p>Git keeps a history of all your changes</p>
-						<li>STATUS tells you which files will be changed</li>
-						<li>COMMIT the change and explain what you've done</li>
-						<li>LOG tells you the history of the changes to the repository</li>
+						<h3>Git keeps a history of all your changes</h3>
+						<ul>
+							<li>STATUS tells you which files will be changed</li>
+							<li>COMMIT the change and explain what you've done</li>
+							<li>LOG tells you the history of the changes to the repository</li>
+						</ul>
 				</section>
 
 				<section>
-					<h1>Collaboration</h2>
+					<h2>Collaboration</h2>
 						<a class="image"><img height="300" width="300" class="center" src="./images/collabocats.jpg" alt="Collabocats"></a>
 						<p>So far we've just looked at a local repository with no other contributors, but when collaborating, or working with a remote repository such as GitHub things unfortunately get more complicated...</p>
 				</section>
 
 				<section>
 					<h2>Working with remote or collaborative repositories</h2>
-						<li>A REMOTE is a link back to the original repository (that you cloned from)</li>
-						<li>You can FETCH or PULL changes from the remote then MERGE them with your changes</li>
-						<li>You can PUSH your changes to a remote repository</li>
+						<ul>
+							<li>A REMOTE is a link back to the original repository (that you cloned from)</li>
+							<li>You can FETCH or PULL changes from the remote then MERGE them with your changes</li>
+							<li>You can PUSH your changes to a remote repository</li>
+						</ul>
 						<aside class="notes">
 							So collaboration is about a central REMOTE that everyone can PULL and MERGE changes from, and PUSH changes to, and GitHub is just another example of a remote repository
 						</aside>
@@ -131,11 +147,13 @@
 				<section>
 					<h2>Forking</h2>
 						<p>A FORK is a GitHub command for making a copy of an existing GitHub repository under your own account</p>
-						<li>You can then CLONE your copy, and edit it locally</li>
-						<li>You can to keep tracking the master repository, by adding it as a second remote</li>
-						<li>You can PULL from either your fork, or the master, by referring to the name or URL of the remote</li>
-						<li>You can only PUSH to your fork on GitHub</li>
-						<li>If you have changes you wish to commit back to the master repository, you can issue a PULL REQUEST</li>
+						<ul>
+							<li>You can then CLONE your copy, and edit it locally</li>
+							<li>You can to keep tracking the master repository, by adding it as a second remote</li>
+							<li>You can PULL from either your fork, or the master, by referring to the name or URL of the remote</li>
+							<li>You can only PUSH to your fork on GitHub</li>
+							<li>If you have changes you wish to commit back to the master repository, you can issue a PULL REQUEST</li>
+						</ul>
 						<aside class="notes">
 							So the workflow is to find a repo you're interested in, fork it to your own account, clone your fork locally, pull any intermediate changes from the original remote, make your changes, push them to your account, then issue a pull request to ask the other repository owner to review and possibly accept your changes</aside>
 				</section>
@@ -143,18 +161,22 @@
 				<section>
 					<h2>Branching</h2>
 						<p>A branch is a way of differentiating between different "versions" of code such as stable versions versus experimental</p>
-						<li>You can CHECKOUT -b a new branch and then work on it separately</li>
-						<li>From then on in, all commits work only on the specific branch until you explicitly MERGE two branches</li>
-						<li>You can compare branches (and commits) with DIFF</li>
-						<li>As a new user you'll probably only use branches by mistake, when your changes have created one on GitHub</li>
+						<ul>
+							<li>You can CHECKOUT -b a new branch and then work on it separately</li>
+							<li>From then on in, all commits work only on the specific branch until you explicitly MERGE two branches</li>
+							<li>You can compare branches (and commits) with DIFF</li>
+							<li>As a new user you'll probably only use branches by mistake, when your changes have created one on GitHub</li>
+						</ul>
 				</section>
 
 				<section>
 					<h2>Undoing changes</h2>
 						<p>Git is a version-control system so of course you can roll-back commits and fix mistakes</p>
-						<li>You can AMEND your last commit to add some new files to it</li>
-						<li>You can RESET HEAD a file from staging (the HEAD is a pointer to the latest branch that you're on)</li>
-						<li>You can REVERT to either the last commit or any commit in the branch history</li>
+						<ul>
+							<li>You can AMEND your last commit to add some new files to it</li>
+							<li>You can RESET HEAD a file from staging (the HEAD is a pointer to the latest branch that you're on)</li>
+							<li>You can REVERT to either the last commit or any commit in the branch history</li>
+						</ul>
 				</section>
 
 				<section>
@@ -169,7 +191,7 @@
 				</section>
 
 				<section data-background="./images/qgis_github.png">
-					<h2>Increasingly GIS packages are using GitHub for their source code, such as <a href="https://github.com/qgis">QGIS</a></h2>
+					<h2>Increasingly GIS packages are using GitHub for their source code, eg <a href="https://github.com/qgis">QGIS</a></h2>
 				</section>
 
 				<section data-background="./images/geopython_github.png">
@@ -180,27 +202,68 @@
 					<h2>Even <a href="https://github.com/Esri">ESRI</a> are embracing GitHub</h2>
 				</section>
 
-				<section>
-					<li class="fragment">Viewing map data on github using GeoJSON or TopoJSON</li>
-					<li class="fragment">GeoGit</li>
-					<li class="fragment">Reference books for python, qgis. git etc</li>
-					<li class="fragment"><a href="http://streams.robscanlon.com/github/">GitHub Wargames</a> courtesy of geonames.org, node.js and socket.io</li>
+				<section data-background="./images/geojson.png">
+					<h2>GitHub understands <a href="https://github.com/benbalter/dc-wifi-social/blob/master/bars.geojson">GeoJson</a> and <a href="https://github.com/mbostock/topojson/wiki">TopoJson</a></h2>
+					<p>Which means you can upload any valid .json file (in EPSG 4326) and it will render automatically on an interactive openstreetmap map courtesy of leaflet.js</p>
 				</section>
 
 				<section>
-					<h2>Cool other stuff TODO</h2>
-					<li>Host websites (eg talks or blogs)</li>
-					<li>Find presentation software that doesn't suck, like BIG or Reveal.js</li>
-					<li>Favourite or Follow software you like</li>
+					<h2>You can implement versioning of your geospatial data using git*</h2>
+					<p class="fragment">*Caution, very beta</p>
 				</section>
 
 				<section>
-					<h2>Finish up TODO</h2>
+					<h2>You can find loads of free reference books</h2>
+					<ul>
+						<li>Python</li>
+						<li>QGIS</li>
+						<li>Git</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>You can see real-time commits</h2>
+					<p><a href="http://streams.robscanlon.com/github/">GitHub Wargames</a> courtesy of geonames.org, node.js and socket.io</p>
+				</section>
+
+				<section>
+					<h2>Non-spatial cool stuff</h2>
+				</section>
+
+				<section>
+					<h2>Host websites</h2>
+					<p>Github can be used to host static html websites, and will even automatically render your html*</p>
+					<p class="fragment">*Like this talk (see later for URL)</p>
+				</section>
+
+				<section>
+					<h2>You can find presentation software that doesn't suck</h2>
+					<p>Such as Reveal.js or Big</p>
+				</section>
+
+				<section>
+					<h2>"The most important social network"*</h2>
+					<p class="fragment">*Someone cool, influential, and important said this but I can't remember who</p>
+				</section>
+
+				<section>
+					<h2>Summary</h2>
+					<ul>
+						<li class="fragment">GitHub is about more than just coding</li>
+						<li class="fragment">There are plenty of resources for getting started</li>
+						<li class="fragment">There are a lot of geospatial and non-geospatial resources on there</li>
+						<li class="fragment">You might find your next employer/employee/client/colleague on there</li>
+						<li class="fragment">It might just make you a better person (well, writer or coder anyway)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Get your pen out again...</h2>
+					<p class="fragment">Find this talk on GitHub at:<a href="TODO">TODO</a></p>
 				</section>
 
 				<section>
 					<h1>Thanks :-)</h1>
-					<h3>Find this on github TODO</h3>
 				</section>
 
 			</div>
