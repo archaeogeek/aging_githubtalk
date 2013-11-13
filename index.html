@@ -16,6 +16,8 @@
 
 		<link rel="stylesheet" href="css/reveal.min.css">
 		<link rel="stylesheet" href="css/theme/serif.css" id="theme">
+		<link rel="stylesheet" href="css/custom.css">
+
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -47,7 +49,7 @@
 					<h2 style="color:white">This is all wrong</h2>
 				</section>
 
-				<section>
+				<section data-background="./images/sharing.jpg">
 					<h2>It's not just about building software</h2>
 					<p>
 						It's a community, a social network, a place for your CV or blog, and increasingly a data viewer/repository
@@ -55,10 +57,11 @@
 				</section>
 
 				<section>
-					<h2>It is about version control as well</h2>
+					<h2>|But it is about version control as well</h2>
 					<p>
 						It's great for collaboration, disaster-recovery, and encourages good practice (be that writing code or prose)
 					</p>
+					<a class="image"> <img src="./images/pull_request.png" alt="Pull Request"></a>
 				</section>
 
 				<section>
@@ -68,6 +71,7 @@
 							<li class="fragment">Usage is predominantly commandline-based</li>
 							<li class="fragment">Explanations and Tutorials get real deep, real quick...</li>
 							<li class="fragment">It's very public!</li>
+							<a  class="fragment" class="image"><img class="center" src="./images/mind-blown.gif" alt="Boom"></a>
 						</ul>
 				</section>
 
@@ -78,6 +82,7 @@
 							<li>Get the (free) <a href="http://git-scm.com/book">book</a></li>
 							<li>Start with the really nice desktop client (windows or mac)</li>
 							<li>Create your own private local repositories to get used to the process</li>
+							<a  class="fragment" class="image"><img class="center" src="./images/github_social.png" alt="GitHub Social"></a>
 				</section>
 
 				<section>
@@ -87,21 +92,23 @@
 
 				<section>
 						<h2>The beginning</h2>
-							<p>Convert your folder into a repository</p>
+							<a class="image"><img height="300" width="300" class="center" src="./images/repo.png" alt="Repocat"></a>
+							<p>Convert your folder into a repository:</p>
 							<li>Either CLONE (eg copy) an existing repository</li>
 							<li>... or INIT (eg create from scratch) a new repository</li>
 				</section>
 
 				<section>
 					<h2>Choosing which files to track</h2>
-						<p>Git will only track files that you tell it to</p>
-						<li>ADD the files you want to track</li>
-						<li>RM --CACHED any files you no longer want to track but don't want to delete from the file system</li>
+						<a class="image"><img height="300" width="300" class="center" src="./images/setuptocat.jpg" alt="Setuptocat"></a>
+						<p>Git will only track files that you tell it to:</p>
+						<li>ADD the files you want to track (and RM --cached the ones you don't)</li>
 						<li>.GITIGNORE compiles a list of files or file types you never want to track</li>
 				</section>
 
 				<section>
 					<h2>Making changes</h2>
+						<a class="image"><img height="300" width="300" class="center" src="./images/forktocat.jpg" alt="Forktocat"></a>
 						<p>Git keeps a history of all your changes</p>
 						<li>Edit your file as usual, and save it</li>
 						<li>STATUS tells you which files will be changed</li>
@@ -110,7 +117,8 @@
 				</section>
 
 				<section>
-					<h1>Working with remote repositories</h2>
+					<h1>Collaboration</h2>
+						<a class="image"><img height="300" width="300" class="center" src="./images/collabocats.jpg" alt="Collabocats"></a>
 						<p>So far we've just looked at a local repository with no other contributors, but when collaborating, or working with a remote repository such as GitHub things unfortunately get more complicated...</p>
 				</section>
 

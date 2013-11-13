@@ -1,0 +1,5 @@
+img.center {
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
