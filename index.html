@@ -57,7 +57,7 @@
 				</section>
 
 				<section>
-					<h2>|But it is about version control as well</h2>
+					<h2>But it is about version control as well</h2>
 					<p>
 						It's great for collaboration, disaster-recovery, and encourages good practice (be that writing code or prose)
 					</p>
@@ -75,24 +75,23 @@
 						</ul>
 				</section>
 
-				<section>
+				<section data-background="./images/github_windows.png">
 					<h2>So how to get started?</h2>
 						<ul>
 							<li>Try one of the courses from <a href="http://www.codeschool.com/courses/try-git">Code School</a></li>
 							<li>Get the (free) <a href="http://git-scm.com/book">book</a></li>
 							<li>Start with the really nice desktop client (windows or mac)</li>
 							<li>Create your own private local repositories to get used to the process</li>
-							<a  class="fragment" class="image"><img class="center" src="./images/github_social.png" alt="GitHub Social"></a>
 				</section>
 
 				<section>
 					<h1>Git 101</h1>
+					<a class="image"><img height="300" width="1200" class="center" src="./images/github_social.png" alt="Collabocats"></a>
 					<h2>Caveat- I only have 20 minutes so don't expect this to be exhaustive!</h2>
 				</section>
 
 				<section>
 						<h2>The beginning</h2>
-							<a class="image"><img height="300" width="300" class="center" src="./images/repo.png" alt="Repocat"></a>
 							<p>Convert your folder into a repository:</p>
 							<li>Either CLONE (eg copy) an existing repository</li>
 							<li>... or INIT (eg create from scratch) a new repository</li>
@@ -100,7 +99,6 @@
 
 				<section>
 					<h2>Choosing which files to track</h2>
-						<a class="image"><img height="300" width="300" class="center" src="./images/setuptocat.jpg" alt="Setuptocat"></a>
 						<p>Git will only track files that you tell it to:</p>
 						<li>ADD the files you want to track (and RM --cached the ones you don't)</li>
 						<li>.GITIGNORE compiles a list of files or file types you never want to track</li>
@@ -108,9 +106,7 @@
 
 				<section>
 					<h2>Making changes</h2>
-						<a class="image"><img height="300" width="300" class="center" src="./images/forktocat.jpg" alt="Forktocat"></a>
 						<p>Git keeps a history of all your changes</p>
-						<li>Edit your file as usual, and save it</li>
 						<li>STATUS tells you which files will be changed</li>
 						<li>COMMIT the change and explain what you've done</li>
 						<li>LOG tells you the history of the changes to the repository</li>
@@ -135,11 +131,11 @@
 				<section>
 					<h2>Forking</h2>
 						<p>A FORK is a GitHub command for making a copy of an existing GitHub repository under your own account</p>
-						<li>You can then CLONE your copy as you need to, and work on it locally</li>
-						<li>If you want to keep tracking the original master repository, then you can REMOTE ADD a second remote</li>
-						<li>You can then PULL from either your fork, or the original by referring to the name or URL of the remote</li>
+						<li>You can then CLONE your copy, and edit it locally</li>
+						<li>You can to keep tracking the master repository, by adding it as a second remote</li>
+						<li>You can PULL from either your fork, or the master, by referring to the name or URL of the remote</li>
 						<li>You can only PUSH to your fork on GitHub</li>
-						<li>If you have changes you wish to commit back to the original repository, you can issue a PULL REQUEST on GitHub</li>
+						<li>If you have changes you wish to commit back to the master repository, you can issue a PULL REQUEST</li>
 						<aside class="notes">
 							So the workflow is to find a repo you're interested in, fork it to your own account, clone your fork locally, pull any intermediate changes from the original remote, make your changes, push them to your account, then issue a pull request to ask the other repository owner to review and possibly accept your changes</aside>
 				</section>
@@ -163,15 +159,32 @@
 
 				<section>
 					<h1>Git Lesson Over...</h1>
-					<h2>Now the fun non-coding stuff</h2>
+					<p>Now the fun non-coding stuff</p>
+					<a class="image"><img height="300" width="300" class="center" src="./images/nyantocat.gif" alt="Collabocats"></a>
+
 				</section>
 
 				<section>
-					<h2>Cool mapping TODO</h2>
-					<li>GIS on GitHub, partic geopython, esri, qgis etc</li>
-					<li>Viewing map data on github using GeoJSON or TopoJSON</li>
-					<li>GeoGit</li>
-					<li>Reference books for python, qgis. git etc</li>
+					<h2>Finally some geospatial stuff!</h2>
+				</section>
+
+				<section data-background="./images/qgis_github.png">
+					<h2>Increasingly GIS packages are using GitHub for their source code, such as <a href="https://github.com/qgis">QGIS</a></h2>
+				</section>
+
+				<section data-background="./images/geopython_github.png">
+					<h2><a href="https://github.com/geopython">Geopython</a> is a useful collection of python libraries for geospatial tasks</h2>
+				</section>
+
+				<section data-background="./images/esri_github.png">
+					<h2>Even <a href="https://github.com/Esri">ESRI</a> are embracing GitHub</h2>
+				</section>
+
+				<section>
+					<li class="fragment">Viewing map data on github using GeoJSON or TopoJSON</li>
+					<li class="fragment">GeoGit</li>
+					<li class="fragment">Reference books for python, qgis. git etc</li>
+					<li class="fragment"><a href="http://streams.robscanlon.com/github/">GitHub Wargames</a> courtesy of geonames.org, node.js and socket.io</li>
 				</section>
 
 				<section>
